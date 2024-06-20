@@ -16,6 +16,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           TOKEN: ${{ secrets.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 }}
-          BRANCH: main  # change this if deploying to a different branch
+          BRANCH: gh_pages # change this if deploying to a different branch
           FOLDER: dist
           CLEAN: true
