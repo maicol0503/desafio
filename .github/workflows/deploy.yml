@@ -10,12 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm install i
+      - run: npm install 
       - run: npm run build
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
-          ACCESS_TOKEN: ${{ secrets.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 }}
-          BRANCH: gh-pages  # change this if deploying to a different branch
+          TOKEN: ${{ secrets.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 }}
+          BRANCH: main  # change this if deploying to a different branch
           FOLDER: dist
           CLEAN: true
